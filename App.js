@@ -58,7 +58,7 @@ class App extends React.Component {
           direction: 'NONE',
           commandTxt:''
       }
-      this.props.onInitTable({cols: 6, rows: 6})
+      this.props.onInitTable({cols: 9, rows:9})
       
       
   }
@@ -187,7 +187,9 @@ command=()=>{
     const {commandTxt, errorMsg } = this.state;
     const matrix = Array.from(new Array(rows), (val, row) => {
       const elms = Array.from(new Array(cols), (val, col) => {
-        return <View key={col} style={[styles.col, row === x && col === y && styles.selected, {width: width/rows}, {height: width/rows}]}/>
+        return <View key={col} style={[styles.col, row === x && col === y 
+            && styles.selected, {width: width/rows,height: width/rows, justifyContent: 'center', alignItems:'center'}]}>
+            <Text>{row === x && col === y?direction.substring(0,1):""}</Text></View>
       });
       return <View key={row} style={styles.row}>{elms}</View>
     });
@@ -238,8 +240,7 @@ var styles = StyleSheet.create({
   col: {
     borderColor: '#aaa',
     borderWidth: 1,
-      // width: 55,
-      height: 55,
+    
   },
   selected: {
     backgroundColor: 'green'
