@@ -22,7 +22,7 @@ should discard all commands in the sequence until a valid PLACE command has been
 * LEFT and RIGHT will rotate the robot 90 degrees in the specified direction without changing the
 position of the robot.
 
-is sufficient.
+
 * A robot that is not on the table can choose the ignore the MOVE, LEFT, RIGHT and REPORT
 commands.
 
