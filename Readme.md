@@ -23,7 +23,7 @@ should discard all commands in the sequence until a valid PLACE command has been
 position of the robot.
 
 
-* A robot that is not on the table can choose the ignore the MOVE, LEFT, RIGHT and REPORT
+* A robot that is not on the table can choose the ignore the MOVE, LEFT, RIGHT
 commands.
 
 ### Constraints:
