@@ -18,7 +18,7 @@ set -ex
     # fastlane -v
     # npm -v
 #     npm run d-b-a
-#npm run ios
+npm run ios
 
 
 
