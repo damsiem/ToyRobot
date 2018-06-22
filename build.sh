@@ -17,7 +17,8 @@ set -ex
     export LANG=en_US.UTF-8
     # fastlane -v
     # npm -v
-    npm run d-b-a
+#     npm run d-b-a
+npm run ios
 
 
 
